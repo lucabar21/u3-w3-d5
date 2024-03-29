@@ -9,7 +9,7 @@ body {
   align-items: center;
   background-color: black;
   position: fixed;
-  height: 100vh;
+  height: 100%;
   z-index: 1200;
 }
 
@@ -165,4 +165,5 @@ body {
 
 .mainPage img {
   width: 200px;
+  cursor: pointer;
 }

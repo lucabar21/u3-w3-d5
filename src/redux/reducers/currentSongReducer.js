@@ -1,7 +1,7 @@
 import { GET_SONG } from "../actions";
 
 const initialState = {
-  data: [],
+  data: null,
 };
 
 const currentSongReducer = (state = initialState, action) => {

@@ -25,8 +25,8 @@ const MainComponent = () => {
       } else {
         throw new Error("Qualcosa è andato storto!");
       }
-    } catch (err) {
-      console.log("error", err);
+    } catch (error) {
+      console.log("error", error);
     }
   };
 
