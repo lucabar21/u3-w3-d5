@@ -43,7 +43,7 @@ const AudiobarComponent = () => {
                   <span>{selectedSong.title}</span>
                   <span>{selectedSong.artist.name}</span>
                 </div>
-                <img src="heart-svg.svg" alt="heart" onClick={() => dispatch(addToFavourite())} />
+                <img src="heart-svg.svg" alt="heart" onClick={() => dispatch(addToFavourite(selectedSong))} />
               </Col>
             </>
           )}
