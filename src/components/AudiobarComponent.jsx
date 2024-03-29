@@ -1,9 +1,12 @@
 import Row from "react-bootstrap/Row";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useState } from "react";
 import { Col } from "react-bootstrap";
+import { addToFavourite } from "../redux/actions";
 
 const AudiobarComponent = () => {
+  const dispatch = useDispatch();
+
   const selectedSong = useSelector((state) => state.current.data);
 
   const [isPlaying, setIsPlaying] = useState(false);
@@ -40,6 +43,7 @@ const AudiobarComponent = () => {
                   <span>{selectedSong.title}</span>
                   <span>{selectedSong.artist.name}</span>
                 </div>
+                <img src="heart-svg.svg" alt="heart" onClick={() => dispatch(addToFavourite())} />
               </Col>
             </>
           )}

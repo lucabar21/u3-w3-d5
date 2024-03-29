@@ -1,9 +1,17 @@
 export const GET_DATA = "GET_DATA";
 export const GET_SONG = "GET_SONG";
+export const ADD_TO_FAVOURITE = "ADD_TO_FAVOURITE";
 
 export const getCurrentSong = (data) => {
   return {
     type: GET_SONG,
+    payload: data,
+  };
+};
+
+export const addToFavourite = (data) => {
+  return {
+    type: ADD_TO_FAVOURITE,
     payload: data,
   };
 };
